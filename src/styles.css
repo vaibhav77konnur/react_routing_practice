@@ -1,0 +1,71 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.navbar {
+  background-color: orangered; /* Set the background color to orange */
+  margin: 20px 0; /* Add margin to the top and bottom */
+  padding: 10px 20px; /* Add padding inside the navbar */
+  text-align: center; /* Center-align the text */
+  color: white; /* Set the text color to white for better contrast */
+  font-family: Arial, sans-serif; /* Set a clean font for the text */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better appearance */
+  position: sticky; /* Make the navbar stick to the top */
+  top: 0; /* Stick to the top of the screen */
+  z-index: 1000; /* Make sure it stays above other content */
+}
+
+nav ul {
+  list-style-type: none; /* Remove default list bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use Flexbox to arrange items in a row */
+  justify-content: center; /* Center the navbar items */
+  background-color: orangered; /* Set background color for navbar */
+}
+
+nav li {
+  margin: 0 20px; /* Add space between each list item */
+}
+
+nav a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Set text color */
+  font-size: 18px; /* Set font size for links */
+}
+
+nav a.active {
+  color: orange; /* Change color when the link is active */
+}
+
+/* Style for the products container */
+.product-list {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 20px; /* Add space between each item */
+  padding: 20px; /* Add padding to the product list */
+}
+
+/* Style for each product item */
+.product-item {
+  width: 25vw; /* Set each div to be 25% of the screen width */
+  height: 250px; /* Set a fixed height for the div */
+  background-color: #f4f4f4; /* Optional background color */
+  border-radius: 10px;
+  border: 2px solid black; /* Optional rounded corners */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  overflow: hidden; /* Ensure images do not overflow the div */
+  margin-bottom: 20px; /* Add margin below each product item */
+}
+
+/* Style for images inside product item */
+.product-item img {
+  width: 100%; /* Ensure the image takes up the full width of the div */
+  height: 100%; /* Ensure the image takes up the full height of the div */
+  object-fit: cover; /* Ensure the image covers the div while maintaining aspect ratio */
+  border: 2px solid black; /* Border around the image */
+}
